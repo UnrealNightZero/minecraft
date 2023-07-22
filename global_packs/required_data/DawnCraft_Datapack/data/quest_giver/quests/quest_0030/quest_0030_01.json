@@ -1,0 +1,47 @@
+{
+  "parent": "quest_giver:quest_0030_01b",
+  "reputation": 12,
+  "icon": "minecraft:iron_helmet",
+  "start": {
+    "title": {
+      "text": "制作高炉"
+    },
+    "description": {
+      "text": "嘿，你已经造好高炉了吗？请确保造一个新的炉子而不是用别人的！"
+    }
+  },
+  "complete": {
+    "title": {
+      "text": "太棒了！"
+    },
+    "description": {
+      "text": "太好了！这下我能用这台新设备打造更好的装备了。谢谢！"
+    }
+  },
+  "tasks": [
+    {
+      "item": {
+        "item": "minecraft:blast_furnace"
+      },
+      "id": "quest_giver:craft",
+      "times": 1
+    },
+    {
+      "item": {
+        "item": "minecraft:blast_furnace"
+      },
+      "id": "quest_giver:gift",
+      "times": 1
+    }
+  ],
+  "rewards": [
+    {
+      "command": "/advancement grant @p only custom:trade_armorer",
+      "id": "quest_giver:command"
+    },
+    {
+      "command": "/addreputation reputation:villager @p 2",
+      "id": "quest_giver:command"
+    }
+  ]
+}
